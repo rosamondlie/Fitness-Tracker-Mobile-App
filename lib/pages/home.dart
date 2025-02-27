@@ -58,6 +58,7 @@ class Home extends StatelessWidget {
 }
 
 
+
 class CardWidget extends StatelessWidget {
   final String title;
   final String subtitle;
@@ -82,13 +83,13 @@ class CardWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            Text(subtitle, style: TextStyle(color: Colors.grey, fontSize: 12)),
+            Text(subtitle, style: TextStyle(color: AppColors.abuText, fontSize: 12)),
             SizedBox(height: 10),
             Row(
               children: [
                 Text(value, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                 SizedBox(width: 5),
-                Text(unit, style: TextStyle(color: Colors.grey, fontSize: 14)),
+                Text(unit, style: TextStyle(color: AppColors.abuText, fontSize: 14)),
               ],
             ),
           ],

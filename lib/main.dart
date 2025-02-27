@@ -1,6 +1,7 @@
 import 'package:fitness_tracker/model/user.dart';
 import 'package:fitness_tracker/pages/home.dart';
 import 'package:fitness_tracker/pages/landing.dart';
+import 'package:fitness_tracker/pages/water.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -25,10 +26,11 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Montserrat',
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
       ),
-      initialRoute: '/landing',
+      initialRoute: '/water',
       routes: {
         '/landing': (context) => const Landing(),
-        '/home': (context) => const Home()
+        '/home': (context) => const Home(),
+        '/water': (context) => const Water()
       },
     );
   }
